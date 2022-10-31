@@ -1,0 +1,66 @@
+* {
+    font-size: xx-large;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {   
+    display: grid;
+    grid-template-rows: 2fr 1fr 8fr 1fr;
+    height: 100vh;
+    text-align: center;
+    background-color: #d8b4fe;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/2;
+    font-size: 80px;
+    background-color: #9333ea;
+    border-radius: 10px;
+    box-shadow: inset 0 -1px 5px white;
+    margin: 10px;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.addBook {
+    border-radius: 15px;
+    padding: 10px 30px;
+    background-color: #9333ea;
+    border-color: #f3e8ff;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #9333ea;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: inset 0 -1px 10px white;
+}
+
+.book {
+    background-color: #d8b4fe;
+    border-color: #a855f7;
+    margin: 10px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+
+}
+.footer {
+    background-color: #9333ea;
+    margin: 0px 10px;
+    border-radius: 15px;
+    box-shadow: inset 0 -1px 10px white;
+
+}
