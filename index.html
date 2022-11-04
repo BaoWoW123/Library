@@ -11,13 +11,23 @@
 <body>
     <div class="container">
         <div class="header">Library</div>
-        <div class="buttonRow">
-            <button type="button" class="addBook">Add Book +</button>
-        </div>
-        <div class="content">
-            
-        </div>
-        <div class="footer">Footer</div>
+        <div class="formTab">
+            <form class="form">
+                <label for="title">Title</label>
+                <input type="text" class="title" required>
+                <label for="author">Author</label>
+                <input type="text" class="author" required>
+                <label for="pages">Pages</label>
+                <input type="number" class="pages" min="0" value="0" required>
+                <label for="read">Read
+                <input type="checkbox" class="read"></button>
+                </label>
+            </form>
+            <button class="addBook" onclick=addBook()>Add Book +</button>
+            </div>
+            <div class="content">
+            </div>
+        <div class="footer">Copyright © Bao Nguyen 2022</div>
     </div>
 </body>
 </html>
