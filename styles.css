@@ -38,6 +38,7 @@
     border-radius: 15px;
     box-shadow: inset 0 -1px 10px white;
 }
+
 .addBook {
     margin: auto;
     margin-bottom: 10px;
@@ -50,35 +51,72 @@
 
 .content {
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 15px;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: inset 0 -1px 10px white;
 }
 
 .content > * {
     background-color: #9333ea;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: small;
+}
+
+.book {
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    width: auto;
+    height: 250px;
+}
+
+.book >* {
+    font-size: x-large;
+}
+
+.readBtn-Not {
+    background-color: red;
+    opacity: .9;
+}
+
+.readBtn-Read {
+    background-color: lightgreen;
+    opacity: .9;
+
+}
+
+.remove {
+    background-color: white;
+    color:black ;
+    padding: 0px 10px;
+}
+
+.remove:hover {
+    opacity: .9;
 }
 
 .form >* {
     font-size: x-large;
 }
+
 input {
     color: black !important;
 }
-.pages {
 
+.pages {
     text-align: center;
 }
+
 .read {
     height: 20px;
     width: 20px;
 }
+
 .footer {
     grid-row: 3/4;
     grid-column: 1/3;
@@ -87,9 +125,6 @@ input {
     justify-content: center;
     align-items: center;
     background-color: black;
-
     border-radius: 15px;
     box-shadow: inset 0 -1px 10px white;
-    
-
 }
